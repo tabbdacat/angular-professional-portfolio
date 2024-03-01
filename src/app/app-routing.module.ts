@@ -20,6 +20,11 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
   },
+  {
+    path: '**',
+    component: HomeComponent,
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
