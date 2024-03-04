@@ -56,7 +56,7 @@ export class ProjectsService {
         projectLink: "https://tabbdacat.github.io/coding-quiz/",
         summary: "Brief summary",
         description: "Full Description of Project",
-        tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
+        tags: [Tag.ANGULAR, ],
     },
     {
       id: 5,
@@ -66,9 +66,11 @@ export class ProjectsService {
         projectLink: "https://drive.google.com/file/d/1xwfROda1DgFF3f8CBdpaUapTH7MgSlPs/view",
         summary: "Brief summary",
         description: "Full Description of Project",
-        tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
+        tags: [Tag.ANGULAR, ],
     },
   ];
+
+  constructor() { }
 
   GetProjects() {
     return this.projects;
@@ -84,5 +86,24 @@ export class ProjectsService {
     return project;
   }
 
-  constructor() { }
+  GetProjectByFilter(filterTags: Tag[]) {
+    let filteredProjects: Project[] = [];
+
+    this.projects.forEach(function (project) {
+      let foundAll = true;
+
+      filterTags.forEach(function (filterTag) {
+        if (project.tags.includes(filterTag) == false) {
+          foundAll = false;
+        }
+      });
+
+      if (foundAll) {
+        filteredProjects.push(project);
+      }
+    })
+
+    return filteredProjects;
+  }
+
 }
