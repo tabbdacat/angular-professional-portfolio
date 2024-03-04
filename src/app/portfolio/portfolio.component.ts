@@ -21,6 +21,8 @@ export class PortfolioComponent implements OnInit {
 
   isCollapsed: boolean = true;
   typeScript: boolean = false;
+  angular: boolean = false;
+  filtering: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Tabbatha Souza - Portfolio');
@@ -35,7 +37,23 @@ export class PortfolioComponent implements OnInit {
     if (this.typeScript) {
       filterTags.push(Tag.TYPESCRIPT);
     }
+    if (this.angular) {
+      filterTags.push(Tag.ANGULAR);
+    }
+    if (this.typeScript || this.angular) {
+      this.filtering = true;
+    } else {
+      this.filtering = false;
+    }
 
     this.projects = this.projectService.GetProjectByFilter(filterTags);
+  }
+
+  ResetFilters() {
+    this.typeScript = false;
+    this.angular = false;
+    this.filtering = false;
+
+    this.projects = this.projectService.GetProjects();
   }
 }
