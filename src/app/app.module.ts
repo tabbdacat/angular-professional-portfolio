@@ -12,6 +12,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
