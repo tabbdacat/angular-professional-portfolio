@@ -14,6 +14,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { FormsModule } from '@angular/forms';
 
@@ -37,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     FormsModule,
+    AccordionModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
