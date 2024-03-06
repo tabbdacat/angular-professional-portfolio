@@ -13,3 +13,21 @@
     background-color: blue;
     color: white;
 }
+
+.btn-primary {
+    background-color: #5bad8b;
+}
+
+.btn-primary:hover {
+    background-color: #95bdad;
+}
+
+.btn-outline-primary {
+    color: #5bad8b;
+    border-color: #5bad8b;
+}
+
+.btn-outline-primary:hover {
+    background-color: #95bdad;
+    border-color: #5bad8b;
+}

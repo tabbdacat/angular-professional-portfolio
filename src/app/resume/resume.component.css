@@ -3,5 +3,5 @@ accordion-group::ng-deep .btn-link {
 }
 
 accordion-group::ng-deep .card-header {
-    background-color: rgb(68, 132, 148);
+    background-color: #c2847a;
 }
