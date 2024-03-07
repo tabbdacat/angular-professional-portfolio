@@ -31,3 +31,13 @@
     background-color: #95bdad;
     border-color: #5bad8b;
 }
+
+.icon {
+    padding: 0 20px;
+    width: fit-content;
+    color: #30332e;
+}
+
+.icon:hover {
+    color: #517286;
+}
