@@ -11,11 +11,11 @@ export class ProjectsService {
     {
       id: 0,
       name: "Culinary Connect - Group Collaboration",
-      pictures: ["../../assets/culinaryConnectImg.jpg", "../../assets/movieMixImg.jpg", "../../assets/techBlogImg.jpg",],
+      pictures: ["../../assets/culinary-1.jpg", "../../assets/culinary-2.jpg", "../../assets/culinary-3.jpg", "../../assets/culinary-4.jpg", "../../assets/culinary-5.jpg", ],
       githubLink: "https://github.com/quar-tech/mvc-recipe-sharing",
       projectLink: "https://mvc-culinary-connect-e00ad0e3e10d.herokuapp.com/",
-      summary: "Brief summary",
-      description: "Full Description of Project",
+      summary: " A platform for sharing recipes. Post your own recipe, or try a new one. Share your favorites with others.",
+      description: "A platform for sharing recipes. Users can create, comment on, and try others' recipes. This app uses Nodemailer to send recipes to your friends and family. Express is utilized to for app routes. Database ORM is maintained by Sequelize. Passwords are hashed via Bcrypt and sessions are maintained using cookies. This project is deployed via Heroku.",
       tags: [Tag.SQL, Tag.BOOTSTRAP, Tag.HANDLEBARS, Tag.NODEJS, Tag.CSS, Tag.JAVASCRIPT ],
     },
     {
