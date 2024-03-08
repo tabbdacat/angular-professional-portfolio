@@ -28,6 +28,7 @@ export class PortfolioComponent implements OnInit {
   mongodb: boolean = false;
   sql: boolean = false;
   bulma: boolean = false;
+  handlebars: boolean = false;
   filtering: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
@@ -82,7 +83,10 @@ export class PortfolioComponent implements OnInit {
     if (this.bulma) {
       filterTags.push(Tag.BULMA);
     }
-    if (this.typeScript || this.angular || this.javaScript || this.html || this.css || this.jquery || this.bootstrap || this.react || this.nodejs || this.materialui || this.restfulapis || this.mongodb || this.sql || this.bulma) {
+    if (this.handlebars) {
+      filterTags.push(Tag.HANDLEBARS);
+    }
+    if (this.typeScript || this.angular || this.javaScript || this.html || this.css || this.jquery || this.bootstrap || this.react || this.nodejs || this.materialui || this.restfulapis || this.mongodb || this.sql || this.bulma || this.handlebars) {
       this.filtering = true;
     } else {
       this.filtering = false;

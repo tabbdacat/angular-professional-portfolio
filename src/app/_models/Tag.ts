@@ -13,6 +13,7 @@ export class Tag {
     static readonly MONGODB = new Tag('MongoDB', '#62bbc1');
     static readonly SQL = new Tag('SQL', '#62bbc1');
     static readonly BULMA = new Tag('Bulma', '#f4a698');
+    static readonly HANDLEBARS = new Tag('Handlebars', '#fcaa67');
 
     private constructor(private readonly key: string, public readonly color: string) {
 
