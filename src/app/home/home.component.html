@@ -4,8 +4,19 @@
         <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2 class="p-3">About Me</h2>
-                <img src="../../assets/me2024.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
-                <p>Welcome to my virtual space! I am a Full Stack Web Developer with a unique background in the healthcare industry. Embracing challenges, I am a critical thinker driven by problem-solving. Organized and reliable, I excel at juggling multiple priorities with a positive approach. Eager to take on new responsibilities to support team objectives. On this platform, I aim to showcase my skills creatively and explore innovative applications.</p>
+                <img src="../../assets/me2024.jpg" alt="profile picture" width="256" height="256"
+                    class="rounded-circle">
+                <blockquote class="blockquote mb-0">
+                    <p>"People who say it cannot be done should not interrupt those who are doing it."</p>
+                    <footer class="blockquote-footer mb-3">George Bernard Shaw,
+                        <cite title="Source Title"> playwright</cite>
+                    </footer>
+                </blockquote>
+                <p>Welcome to my virtual space! I am a Full Stack Web Developer with a unique background in the
+                    healthcare industry. Embracing challenges, I pride myself on being a critical thinker driven by
+                    problem-solving. Organized and reliable, I excel at juggling multiple priorities with a positive
+                    approach. Eager to take on new responsibilities to support team objectives. On this platform, I aim
+                    to showcase my skills creatively and explore innovative applications.</p>
             </div>
         </div>
         <!-- Featured Project -->
@@ -18,7 +29,7 @@
             <carousel>
                 <div *ngFor="let picture of featuredProject.pictures">
                     <slide>
-                       <img src={{picture}} alt="slide" style="display: block; width: 100%;"> 
+                        <img src={{picture}} class="shadow border rounded" alt="slide" style="display: block; width: 100%;">
                     </slide>
                 </div>
             </carousel>
