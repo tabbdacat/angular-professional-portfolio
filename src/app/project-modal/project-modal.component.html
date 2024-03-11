@@ -18,8 +18,8 @@
 
     <hr>
     <div class="d-flex flex-wrap">
+        <p class="m-1">Utilizes:</p>
         <div *ngFor="let tag of project.tags">
-            <p class="m-1">Utilizes:</p>
             <div class="tag me-2 mb-2" [style.background-color]="tag.color">{{tag}}</div>
         </div>
     </div>
