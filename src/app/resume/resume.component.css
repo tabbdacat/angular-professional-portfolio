@@ -1,5 +1,10 @@
 accordion-group::ng-deep .btn-link {
     color: white;
+    font-size: large;
+}
+
+accordion-group::ng-deep .btn-link:hover {
+    color: rgb(206, 204, 204);
 }
 
 accordion-group::ng-deep .card-header {
